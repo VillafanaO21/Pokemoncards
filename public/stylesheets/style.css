@@ -7,7 +7,7 @@ body {
 .card {
   border: 5px ;
   border: 6px solid #f3d22d;
-  width: 290px;
+  width: 280px;
   height: 410px;
   background-color: #f27243;
 }
@@ -54,8 +54,16 @@ a {
   display: flex;
   align-items: center;
   margin-left: 10px;
+  justify-content: left;
 }
 
 .title {
+  align-items: baseline;
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.attack {
+  justify-content: right;
 }
