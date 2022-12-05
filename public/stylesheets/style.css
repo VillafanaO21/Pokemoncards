@@ -7,8 +7,8 @@ body {
 .card {
   border: 5px ;
   border: 6px solid #f3d22d;
-  width: 280px;
-  height: 400px;
+  width: 200px;
+  height: 300px;
   background-color: #f27243;
   border-radius: 5px;
 }
@@ -21,8 +21,9 @@ p {
 
 .name{
   width: 110px;
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 a {
@@ -30,33 +31,32 @@ a {
 }
 
 .img {
-  margin-top: 10px;
-  margin-left: 35px;
-  margin-right: 50px;
-  width: 200px;
-  height: 160px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  width: 170px;
+  height: 90px;
   border: 3px solid grey;
   display: flex;
   align-items: center;
 }
 
 .hp {
-  font-size: 12px;
+  font-size: 10px;
   margin-left: 210px;
   margin-top: 20px;
 }
 
 .power {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
 }
 
 .powerrow {
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 5px;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .title {
@@ -74,6 +74,23 @@ a {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-content: flex-start;
-  width: 25px;
-  height: 25px;
+  width: 10px;
+  height: 10px;
+  margin-top: -0.3px;
+  margin-left: 15px;
 }
+
+.divide {
+  height: 1px;
+  width: 200px;
+  background-color: black;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.weak {
+  margin-left: 5px;
+  font-size: 10px;
+  justify-content: space-between;
+}
+
