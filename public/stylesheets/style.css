@@ -6,7 +6,7 @@ body {
 
 .card {
   border: 5px ;
-  border: 6px solid #f3d22d;
+  border: 8px solid #f3d22d;
   width: 200px;
   height: 300px;
   background-color: #f27243;
@@ -94,3 +94,19 @@ a {
   justify-content: space-between;
 }
 
+.retreat {
+  font-size: 10px;
+  margin-left: 130px;
+  margin-top: -10px;
+}
+
+.retreating {
+  margin-left: 140px;
+  margin-top: -10px;
+}
+
+.resistance {
+  margin-left: 65px;
+  font-size: 10px;
+  margin-top: -12px;
+}
