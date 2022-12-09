@@ -1,10 +1,5 @@
-extends layout
+mixin PokemonCards(Pokemon)
 
-block content
-    include mixins/PokemonCards
-        div.container
-            each PokemonCards in PokemonCards
-                +PokemonCards(PokemonCards)
     div.card
         div.title
             div.name Tepig
