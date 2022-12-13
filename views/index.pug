@@ -3,8 +3,8 @@ extends layout
 block content
     include mixins/PokemonCards
         div.container
-            each PokemonCards in PokemonCards
-                +PokemonCards(PokemonCards)
+            each Pokemon in PokemonCards
+                +PokemonCards(Pokemon)
     div.card
         div.title
             div.name Tepig
@@ -12,7 +12,7 @@ block content
                 img.power(src='/images/fire-removebg-preview.png')
                 img.power(src='/images/basicPokemon.png')
 
-        img.img(src='https://staticg.sportskeeda.com/editor/2022/11/224f1-16681562150640-1920.jpg')
+        img.img(src='Rollout')
         div.powerrow
             img.power(src='/images/fire-removebg-preview.png')
             img.power(src='/images/basicPokemon.png')

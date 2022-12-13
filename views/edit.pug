@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    div.form-panel
+        div.header Edit PokemonCards
+            form(action=`/edit/${PokemonCards.id}` method='post')
+                div.form-input
+                    label(for='name') Name:
+                    input(type='text' id='name' name'name' value=PokemonCards)
+                    div.from-input
+                        label(for='category') Category
+                        select(id='category' name='name' value=restaurant.name)
+                        each category in categories
+                            option(value=category selected = (category ===PokemonCards.category)) #{category}
+                div.form-input
+                    label(for='category') Rating
+                    select(id='category' name='category' autocomplete='off')
+                    each category in categories
+                        option(value=category selected = (category === PokemonCards.category)) #{category}
