@@ -6,14 +6,31 @@ block content
             form(action=`/edit/${PokemonCards.id}` method='post')
                 div.form-input
                     label(for='name') Name:
-                    input(type='text' id='name' name'name' value=PokemonCards)
-                    div.from-input
-                        label(for='category') Category
-                        select(id='category' name='name' value=restaurant.name)
-                        each category in categories
-                            option(value=category selected = (category ===PokemonCards.category)) #{category}
-                div.form-input
-                    label(for='category') Rating
-                    select(id='category' name='category' autocomplete='off')
-                    each category in categories
-                        option(value=category selected = (category === PokemonCards.category)) #{category}
+                    input(type='text' id='name' name='name' value=PokemonCards.name)
+                div.from-input
+                    label(for='Health') Health
+                    select(id='Health' name='health' autocomplete='off')
+                        each health in PokemonCards
+                            option(value=heath selected = (health ===PokemonCards.health)) #{health}
+                div.from-input
+                    label(for='image') Image URL:
+                    input(type='text' id='image' name='image' value=PokemonCards.image)
+                div.from-input
+                    label(for='PowerName') PowerName:
+                    textarea( id='PowerName' name='PowerName') #{PokemonCards.PowerName}
+                div.from-input
+                    label(for='PowerDMG') PowerDMG:
+                    textarea( id='PowerDMG' name='PowerDMG') #{PokemonCards.PowerDMG}
+                div.from-input
+                    label(for='Weakness') Weakness:
+                    textarea( id='Weakness' name='Weakness') #{PokemonCards.Weakness}
+                div.from-input
+                    label(for='PowerResistance') Resistance:
+                    textarea( id='PowerResistance' name='PowerResistance') #{PokemonCards.PowerResistance}
+                div.from-input
+                    label(for='RetreatCost') RetreatCost:
+                    textarea( id='RetreatCost' name='RetreatCost') #{PokemonCards.RetreatCost}
+                div.button-row
+                    a.button.cancel(href='/')Cancel
+                    a.button.delete(href=`/delete/${PokemonCards.id}`) Delte
+                    button.button.save(type='submit') Submit
