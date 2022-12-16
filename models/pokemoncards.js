@@ -14,11 +14,11 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   PokemonCards.init({
-    name: DataTypes.STRING,
+    Name: DataTypes.STRING,
     PowerName: DataTypes.STRING,
     PowerDMG: DataTypes.INTEGER,
     Weakness: DataTypes.STRING,
-    Ressistance: DataTypes.STRING,
+    Resistance: DataTypes.STRING,
     RetreatCost: DataTypes.INTEGER,
     PokemonPic: DataTypes.STRING,
     PowerName2: DataTypes.STRING,

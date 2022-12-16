@@ -1,0 +1,35 @@
+mixin PokemonCards(Pokemon, actionURL, mode, tittle)
+
+    div.form-panel
+        div.header =  Edit PokemonCards
+            form(action=actionURL method='post')
+                div.form-input
+                    label(for='name') Name:
+                    input(type='text' id='name' name='name' value=Pokemon.name)
+                div.from-input
+                    label(for='Health') Health
+                    select(id='Health' name='health' autocomplete='off')
+                        each health in Pokemon
+                            option(value=heath selected = (health ===Pokemon.health)) #{health}
+                div.from-input
+                    label(for='image') Image URL:
+                    input(type='text' id='image' name='image' value=Pokemon.image)
+                div.from-input
+                    label(for='PowerName') PowerName:
+                    textarea( id='PowerName' name='PowerName') #{Pokemon.PowerName}
+                div.from-input
+                    label(for='PowerDMG') PowerDMG:
+                    textarea( id='PowerDMG' name='PowerDMG') #{Pokemon.PowerDMG}
+                div.from-input
+                    label(for='Weakness') Weakness:
+                    textarea( id='Weakness' name='Weakness') #{Pokemon.Weakness}
+                div.from-input
+                    label(for='PowerResistance') Resistance:
+                    textarea( id='PowerResistance' name='PowerResistance') #{Pokemon.PowerResistance}
+                div.from-input
+                    label(for='RetreatCost') RetreatCost:
+                    textarea( id='RetreatCost' name='RetreatCost') #{Pokemon.RetreatCost}
+                div.button-row
+                    a.button.cancel(href='/')Cancel
+                    a.button.delete(href=`/delete/${Pokemon.id}`) Delete
+                    button.button.save(type='submit') Submit
